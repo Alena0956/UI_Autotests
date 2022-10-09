@@ -1,8 +1,6 @@
 from .locators import LoginPageLocators
 from .locators import MainPageLocators
 from .main_page import MainPage
-import time
-
 
 class LoginPage(MainPage):
 	def go_to_login_page(self):

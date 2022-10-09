@@ -1,5 +1,4 @@
 import pytest
-import time
 from .pages.login_page import LoginPage
 from .pages.yandexdisk_page import YandexPage
 

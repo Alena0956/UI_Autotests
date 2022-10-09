@@ -2,8 +2,8 @@ from .locators import YandexDiskPageLocators
 from .main_page import MainPage
 from .locators import UserProfilePageLocators
 from selenium.webdriver.common.keys import Keys
-import time
 from selenium.webdriver import ActionChains
+import time
 
 class YandexPage(MainPage):
 	def create_folder(self):
