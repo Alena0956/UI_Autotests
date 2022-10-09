@@ -1,22 +1,23 @@
 import pytest
 import time
 from .pages.login_page import LoginPage
-
-from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
-
+from .pages.yandexdisk_page import YandexPage
 
 class TestYandexDisk():
-	def test_user_can_copy_file(self, browser):
+	def test_actions_user_go_from_dzen_to_disk(self, browser):
 		login_link = 'http://yandex.ru'
 		page = LoginPage(browser, login_link)
 		page.open()
-		time.sleep(20)
 		page.go_to_login_page()
 		page.login_user()
-		page.open_yandex_desk()
-		time.sleep(15)
+		page.open_yandex_disk()
+		page_disk = YandexPage(browser,login_link)
+		page_disk.create_folder()
+		page_disk.copy_file()
+		page_disk.user_log_out()
 
-	#def test_autorization_user(self, browser):
+
+
+		
 		
 
