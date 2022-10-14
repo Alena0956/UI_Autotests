@@ -6,7 +6,5 @@ from selenium import webdriver
 def browser(request):
 	browser = webdriver.Chrome()
 	browser.set_window_size(1410,1050)
-	print("\nstart browser for test..")
 	yield browser
-	print("\nquit browser..")
 	browser.quit()

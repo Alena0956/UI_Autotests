@@ -1,4 +1,4 @@
-import pytest
+
 from .pages.login_page import LoginPage
 from .pages.yandexdisk_page import YandexPage
 
@@ -14,9 +14,3 @@ class TestYandexDisk():
 		page_disk.create_folder()
 		page_disk.copy_file()
 		page_disk.user_log_out()
-
-
-
-		
-		
-

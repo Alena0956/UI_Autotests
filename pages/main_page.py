@@ -1,6 +1,4 @@
 from selenium.webdriver.support.wait import WebDriverWait
-from selenium.webdriver.support.ui import Select
-import time
 
 class MainPage():
 	def __init__(self, browser, url, timeout = 10):
